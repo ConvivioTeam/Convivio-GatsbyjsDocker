@@ -1,0 +1,5 @@
+# Do not include actual environment files.
+.env
+
+# Do not include the Gatsby site at ./site/
+site/
