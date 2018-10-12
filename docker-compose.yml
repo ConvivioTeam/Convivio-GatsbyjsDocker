@@ -5,7 +5,9 @@ services:
     image: gatsbyjs/gatsby:$GATSBYJS_TAG
     container_name: "${PROJECT_NAME}_gatsby"
     volumes:
-      - ./site:$GATSBYJS_SITE_PATH
+      # - ./site:$GATSBYJS_SITE_PATH
+      # For macOS users 
+      - ./site:$GATSBYJS_SITE_PATH:cached # User-guided caching
     environment:
       PUBLIC_PATH: $GATSBYJS_PUBLIC_PATH
     labels:

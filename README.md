@@ -31,3 +31,7 @@ The Docker image does not detect changes to your Gatsby site. You will need to r
 
 
 4. Your site should be available at your `$PROJECT_BASE_URL` location (default: [http://gatsbyjs.docker.localhost](http://gatsbyjs.docker.localhost)).
+
+
+// TODO
+The Nginx in the Gatsby container seems to be caching the HTML pages built by Gatsby. Even though they're mounted correctly into the container, and update after a `gatsby build`, the Nginx is still throwing out an old page. I wonder why.
